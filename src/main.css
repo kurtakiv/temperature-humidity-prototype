@@ -1,0 +1,46 @@
+.th-container {
+    display: flex;
+}
+
+.info-t {
+    display: flex;
+    justify-content: space-between;
+    max-width: 300px;
+}
+
+.info-t > div {
+    padding: 4px;
+    border-left: 1px dashed rgba(232, 232, 232, .9);
+
+    font-weight: 800;
+}
+
+.info-t > div:last-child {
+    border-right: 1px dashed rgba(232, 232, 232, .9);
+}
+
+.axe {
+    stroke: #ccc;
+    stroke-dasharray: 0;
+    stroke-width: 1;
+}
+
+
+.tick {
+    stroke: #000;
+    opacity: 1;
+}
+
+.tick-line {
+    stroke: #000;
+    opacity: .2;
+}
+
+.data {
+    fill: red;
+    stroke-width: 1;
+}
+
+circle {
+    cursor: pointer;
+}

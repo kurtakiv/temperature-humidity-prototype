@@ -1,0 +1,12 @@
+{
+  "name": "temperature-humidity-prototype",
+  "version": "1.0.0",
+  "main": "index.js",
+  "repository": "https://github.com/kurtakiv/temperature-humidity-prototype.git",
+  "author": "mv <mvsemeniuk@gmail.com>",
+  "license": "MIT",
+  "devDependencies": {
+    "add": "^2.0.6",
+    "http-server": "^0.12.3"
+  }
+}

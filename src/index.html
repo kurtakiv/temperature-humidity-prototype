@@ -1,0 +1,46 @@
+<!DOCTYPE html>
+<html lang="en">
+<link>
+    <meta charset="UTF-8">
+    <title>Temperature humidity dashboard</title>
+    <link rel="stylesheet"  href="./main.css">
+<script src="./app.js" type="module"></script>
+</head>
+<body>
+    <div id="th-container">
+            <div class="info">
+                <div class="info-t">
+                    <div>
+                        <p><br/></p>
+                        <p>Temperature &#8451;:</p>
+                        <p>Humidity %:</p>
+                    </div>
+                    <div>
+                        <p>Min</p>
+                        <p class="t-value-min"></p>
+                        <p class="h-value-min"></p>
+                    </div>
+                    <div>
+                        <p>Max</p>
+                        <p class="t-value-max"></p>
+                        <p class="h-value-max"></p>
+                    </div>
+                    <div>
+                        <p>Current</p>
+                        <p class="t-value-cur"></p>
+                        <p class="h-value-cur"></p>
+                    </div>
+                </div>
+            </div>
+            <div class="controls">
+                <button id='temperatureButton'> Temperature</button>
+                <button id='humidityTemperature'> Humidity</button>
+            </div>
+            <svg version="1.2" id='th-chart' xmlns="http://www.w3.org/2000/svg" class="chart" aria-labelledby="title" role="img">
+
+            </svg>
+            <div class="panel">
+            </div>
+    </div>
+</body>
+</html>
