@@ -1,11 +1,63 @@
+
 .th-container {
     display: flex;
+    justify-content: center;
+    flex-direction: column;
+}
+
+#th-chart rect {
+    fill: lightgray;
+    opacity: .5;
+}
+
+
+#th-chart circle {
+    cursor: pointer;
+}
+
+#th-chart .axe {
+    stroke: #ccc;
+    stroke-dasharray: 0;
+    stroke-width: 1;
+}
+
+#th-chart .data {
+    fill: red;
+    stroke-width: 1;
+}
+
+#th-chart .tick {
+    stroke: #000;
+    opacity: 1;
+}
+
+#th-chart .tick-line {
+    stroke: #000;
+    opacity: .2;
+}
+
+#th-chart .close {
+    font-size: 32px;
+    font-weight: bold;
+    cursor: pointer;
+}
+
+#th-chart .close:hover {
+    font-size: 34px;
+}
+
+#th-chart .close:active {
+    font-size: 30px;
 }
 
 .info-t {
     display: flex;
     justify-content: space-between;
-    max-width: 300px;
+    max-width: 500px;
+}
+
+.info-t > div:first-child {
+    flex-shrink: 2;
 }
 
 .info-t > div {
@@ -19,28 +71,31 @@
     border-right: 1px dashed rgba(232, 232, 232, .9);
 }
 
-.axe {
-    stroke: #ccc;
-    stroke-dasharray: 0;
-    stroke-width: 1;
+.selected-values {
+    height: 20px;
+    display: flex;
+    max-width: 500px;
+    padding-top: 5px;
+    justify-content: center;
+    font-size: 16px;
+    font-weight: 800;
+}
+
+.selected-values span {
+    margin-left: 5px;
 }
 
 
-.tick {
-    stroke: #000;
-    opacity: 1;
-}
-
-.tick-line {
-    stroke: #000;
-    opacity: .2;
-}
-
-.data {
-    fill: red;
-    stroke-width: 1;
-}
-
-circle {
-    cursor: pointer;
+.button {
+    display: block;
+    background: #339DFF;
+    color: #fff;
+    text-decoration: none;
+    font-size: 13px;
+    line-height: 20px;
+    -webkit-transition: all 0.3s;
+    transition: all 0.3s;
+    width: 100px;
+    text-align: center;
+    margin: 5px;
 }
