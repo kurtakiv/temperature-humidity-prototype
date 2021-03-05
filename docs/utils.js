@@ -4,7 +4,7 @@ const dateOptions = {
   hour: 'numeric',
   minute: 'numeric',
   hour12: false,
-  timeZone: 'America/Los_Angeles'
+  timeZone: 'Europe/Kiev'
 };
 export const formatDate = (date, options) => {
   if (date) {

@@ -33,7 +33,7 @@ async function buildChart(chartType = CHART_TYPES.TEMP, measurements) {
   })
     .setOnHoverDisplayFunction(displayOnHover)
     .setYLabel(yLabels)
-    .setXLabel(dates.reverse(), Math.ceil(dates.length / 10))
+    .setXLabel(dates, Math.ceil(dates.length / 10))
     .setPolyline(measurements.data, chartType, minYValue);
 
 
